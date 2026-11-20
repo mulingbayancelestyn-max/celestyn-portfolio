@@ -1,0 +1,272 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #081629;
+    color: #FFFFFF;
+    line-height: 1.6;
+}
+
+/* NAVIGATION */
+header {
+    background-color: #06111F;
+    padding: 20px 8%;
+    border-bottom: 1px solid #1D3B5C;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #64B5F6;
+    font-size: 28px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #64B5F6;
+}
+
+/* HOME */
+.home {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 8%;
+    gap: 40px;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.welcome {
+    color: #64B5F6;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.home-content h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.home-content h1 span {
+    color: #64B5F6;
+}
+
+.home-content h2 {
+    color: #A9C9F5;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    margin-bottom: 25px;
+}
+
+.home-image img {
+    width: 350px;
+    max-width: 100%;
+    border-radius: 20px;
+    border: 3px solid #64B5F6;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    background-color: #64B5F6;
+    color: #081629;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+/* ABOUT AND OTHER PAGES */
+.page-section {
+    min-height: 85vh;
+    padding: 70px 8%;
+}
+
+.section-title {
+    text-align: center;
+    color: #64B5F6;
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+.about-box {
+    max-width: 850px;
+    margin: auto;
+}
+
+.about-box h2 {
+    color: #64B5F6;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.about-box h3 {
+    color: #A9C9F5;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+/* SKILLS */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.skills span {
+    background-color: #1D3B5C;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid #31577D;
+}
+
+/* PORTFOLIO */
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    background-color: #10243D;
+    padding: 30px;
+    width: 280px;
+    border-radius: 15px;
+    border: 1px solid #31577D;
+    transition: 0.3s;
+}
+
+.card h2 {
+    color: #64B5F6;
+    margin-bottom: 15px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background-color: #1D3B5C;
+}
+
+/* CONTACT */
+.contact-box {
+    max-width: 600px;
+    margin: auto;
+    background-color: #10243D;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #31577D;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    color: #A9C9F5;
+}
+
+input, textarea {
+    padding: 15px;
+    border: 1px solid #31577D;
+    border-radius: 8px;
+    background-color: #081629;
+    color: white;
+    outline: none;
+}
+
+input:focus, textarea:focus {
+    border-color: #64B5F6;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #A9C9F5;
+}
+
+.contact-info {
+    margin-top: 25px;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    background-color: #06111F;
+    text-align: center;
+    padding: 20px;
+    color: #A9C9F5;
+    border-top: 1px solid #1D3B5C;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 35px;
+    }
+
+    .home-image img {
+        width: 280px;
+    }
+
+    .portfolio-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills {
+        justify-content: center;
+    }
+}
