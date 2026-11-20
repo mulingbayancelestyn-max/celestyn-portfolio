@@ -1,49 +1,168 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | My Portfolio</title>
+    <title>Celestyn | My Universe</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <nav>
-            <h2 class="logo">Celestyn.</h2>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">✦ Celestyn</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <section class="home">
-        <div class="home-content">
-            <p class="welcome">WELCOME TO MY PORTFOLIO</p>
-            <h1>Hello, I'm <span>Celestyn</span></h1>
-            <h2>BSIT Student</h2>
+<main>
 
+<section class="hero">
+
+    <div class="hero-content">
+
+        <p class="intro-label">✧ WELCOME TO MY LITTLE UNIVERSE ✧</p>
+
+        <h1>Hello, I'm <br>
+            <span class="gradient-text">Celestyn</span>
+        </h1>
+
+        <h2>IT Student & Creative Soul</h2>
+
+        <p class="hero-description">
+            A first-year Information Technology student who loves
+            exploring computers, learning new things, and expressing
+            creativity through dancing. Welcome to my little space
+            where technology meets imagination.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="about.html" class="magic-button">
+                Get to Know Me
+                <span class="magic-arrow">➜</span>
+            </a>
+
+            <a href="portfolio.html" class="outline-button">
+                Explore My Projects ✧
+            </a>
+
+        </div>
+
+        <p class="motto">
+            Turning curiosity into code, and challenges into opportunities.
+        </p>
+
+    </div>
+
+    <div class="hero-image">
+
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+
+        <div class="portrait-frame">
+            <img src="celestyn.jpg" alt="Celestyn">
+        </div>
+
+        <span class="floating-star star-one">✦</span>
+        <span class="floating-star star-two">✧</span>
+        <span class="floating-star star-three">♡</span>
+        <span class="floating-star star-four">◇</span>
+        <span class="floating-star star-five">✦</span>
+
+    </div>
+
+</section>
+
+<section class="welcome-section">
+
+    <p class="intro-label">✧ A LITTLE ABOUT MY WORLD ✧</p>
+
+    <h2>Welcome to My <span class="gradient-text">Universe</span></h2>
+
+    <p>
+        A little space filled with curiosity, creativity,
+        dreams, and my journey in the world of Information Technology.
+    </p>
+
+    <div class="welcome-cards">
+
+        <div class="welcome-card">
+            <div class="card-icon">⌨</div>
+            <h3>Technology</h3>
             <p>
-                I am an aspiring IT student who enjoys exploring
-                technology, learning programming, and creating
-                new things. Welcome to my personal website!
+                Exploring computers, programming, web design,
+                and the world of technology.
             </p>
-
-            <a href="portfolio.html" class="btn">Explore My Projects</a>
         </div>
 
-        <div class="home-image">
-            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&q=80"
-                 alt="Computer workspace">
+        <div class="welcome-card">
+            <div class="card-icon">✧</div>
+            <h3>Creativity</h3>
+            <p>
+                Expressing myself through dancing, ideas,
+                designs, and imagination.
+            </p>
         </div>
-    </section>
 
-    <footer>
-        <p>&copy; 2026 Celestyn | My Personal Portfolio</p>
-    </footer>
+        <div class="welcome-card">
+            <div class="card-icon">♡</div>
+            <h3>Growth</h3>
+            <p>
+                Learning new skills, facing challenges,
+                and growing one step at a time.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="home-cta">
+    <h2>Curious About My Journey?</h2>
+    <p>Discover more about me, my skills, and the things I create.</p>
+
+    <a href="about.html" class="magic-button">
+        Get to Know Me
+        <span class="magic-arrow">➜</span>
+    </a>
+</section>
+
+</main>
+
+<footer>
+    <p>✧ Made with creativity and a little magic ✧</p>
+    <p>© 2026 Celestyn | BSIT Student</p>
+</footer>
+
+<script>
+document.addEventListener("mousemove", function(e) {
+    const symbols = ["♡", "◇", "✦", "✧", "⋆", "✺", "✨"];
+
+    const trail = document.createElement("span");
+    trail.className = "magic-trail";
+
+    trail.innerHTML = symbols[Math.floor(Math.random() * symbols.length)];
+
+    trail.style.left = e.clientX + "px";
+    trail.style.top = e.clientY + "px";
+
+    document.body.appendChild(trail);
+
+    setTimeout(() => {
+        trail.remove();
+    }, 1000);
+});
+</script>
+</body>
+</html>
+
 
 </body>
 </html>

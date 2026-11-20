@@ -1,69 +1,175 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | My Portfolio</title>
+    <title>My Projects | Celestyn</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <nav>
-            <h2 class="logo">Celestyn.</h2>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">✦ Celestyn</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <section class="page-section">
-        <h1 class="section-title">My Projects</h1>
-        <p class="intro">Here are some of my school activities and projects.</p>
+<main>
 
-        <div class="portfolio-container">
+<section class="page-header">
+    <p class="intro-label">✧ MY CREATIVE CORNER ✧</p>
+    <h1>My <span class="gradient-text">Projects</span></h1>
+    <p>A collection of activities, practice, and things I have explored as an IT student.</p>
+</section>
 
-            <div class="card">
-                <h2>HTML Website</h2>
-                <p>
-                    A simple webpage created using HTML to practice
-                    basic tags, elements, and webpage structure.
-                </p>
-            </div>
+<div class="projects-container">
 
-            <div class="card">
-                <h2>C Programming</h2>
-                <p>
-                    Programming exercises using C that demonstrate
-                    variables, loops, conditions, and arrays.
-                </p>
-            </div>
+    <article class="project-card">
 
-            <div class="card">
-                <h2>Flowchart Activity</h2>
-                <p>
-                    A flowchart project that represents the steps
-                    and logic of a program using symbols.
-                </p>
-            </div>
-
-            <div class="card">
-                <h2>Computer Networking</h2>
-                <p>
-                    A school activity about computer networks,
-                    cables, and basic networking concepts.
-                </p>
-            </div>
-
+        <div class="project-art">
+            <span>✧ &lt;/&gt; ✧</span>
         </div>
-    </section>
 
-    <footer>
-        <p>&copy; 2026 Celestyn | My Personal Portfolio</p>
-    </footer>
+        <p class="project-category">WEB DESIGN</p>
+
+        <h2>Personal Website</h2>
+
+        <p>
+            A personal website designed using HTML and CSS.
+            It showcases my introduction, skills, projects,
+            and personal information.
+        </p>
+
+        <div class="project-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+        </div>
+
+        <span class="project-number">01 ✦</span>
+
+    </article>
+
+    <article class="project-card">
+
+        <div class="project-art">
+            <span>⌨ C ✧</span>
+        </div>
+
+        <p class="project-category">PROGRAMMING</p>
+
+        <h2>C Programming Exercises</h2>
+
+        <p>
+            Programming exercises that helped me practice variables,
+            operators, loops, conditions, arrays, and basic programming logic.
+        </p>
+
+        <div class="project-tags">
+            <span>C</span>
+            <span>Problem Solving</span>
+        </div>
+
+        <span class="project-number">02 ✦</span>
+
+    </article>
+
+    <article class="project-card">
+
+        <div class="project-art">
+            <span>◇ → ✧</span>
+        </div>
+
+        <p class="project-category">LOGIC & DESIGN</p>
+
+        <h2>Flowchart Activities</h2>
+
+        <p>
+            Visual representations of programming solutions that helped
+            me understand the sequence and logic of a program.
+        </p>
+
+        <div class="project-tags">
+            <span>Flowcharts</span>
+            <span>Logic</span>
+        </div>
+
+        <span class="project-number">03 ✦</span>
+
+    </article>
+
+    <article class="project-card">
+
+        <div class="project-art">
+            <span>⌘ ♡</span>
+        </div>
+
+        <p class="project-category">NETWORKING</p>
+
+        <h2>Networking Activities</h2>
+
+        <p>
+            Learning about network connections, Ethernet,
+            network devices, cables, and the fundamentals
+            of computer networking.
+        </p>
+
+        <div class="project-tags">
+            <span>Networking</span>
+            <span>Computer Systems</span>
+        </div>
+
+        <span class="project-number">04 ✦</span>
+
+    </article>
+
+</div>
+
+<section class="home-cta">
+    <h2>Let's Connect</h2>
+    <p>Thank you for exploring my little universe.</p>
+
+    <a href="contact.html" class="magic-button">
+        Let's Connect
+        <span class="magic-arrow">➜</span>
+    </a>
+</section>
+
+</main>
+
+<footer>
+    <p>✧ Every project is another step in my journey ✧</p>
+    <p>© 2026 Celestyn | BSIT Student</p>
+</footer>
+
+<script>
+document.addEventListener("mousemove", function(e) {
+    const symbols = ["♡", "◇", "✦", "✧", "⋆", "✺", "✨"];
+
+    const trail = document.createElement("span");
+    trail.className = "magic-trail";
+
+    trail.innerHTML = symbols[Math.floor(Math.random() * symbols.length)];
+
+    trail.style.left = e.clientX + "px";
+    trail.style.top = e.clientY + "px";
+
+    document.body.appendChild(trail);
+
+    setTimeout(() => {
+        trail.remove();
+    }, 1000);
+});
+</script>
+</body>
+</html>
+
 
 </body>
 </html>

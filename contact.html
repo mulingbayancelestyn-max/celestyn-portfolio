@@ -1,55 +1,151 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | My Portfolio</title>
+    <title>Let's Connect | Celestyn</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <nav>
-            <h2 class="logo">Celestyn.</h2>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">✦ Celestyn</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <section class="page-section">
-        <h1 class="section-title">Contact Me</h1>
-        <p class="intro">
-            Feel free to send me a message or get in touch.
+<main>
+
+<section class="page-header">
+    <p class="intro-label">✧ A MESSAGE FROM YOUR UNIVERSE ✧</p>
+
+    <h1>Let's <span class="gradient-text">Connect</span>
+        <span class="magic-arrow">➜</span>
+    </h1>
+
+    <p>Thank you for visiting my little corner of the internet.</p>
+</section>
+
+<div class="contact-content">
+
+    <section class="contact-info glass-card">
+
+        <h2>Say Hello! ✦</h2>
+
+        <p>
+            Whether it's about technology, creativity, projects,
+            or simply a friendly message, this is my contact page.
         </p>
 
-        <div class="contact-box">
-            <form>
-                <label for="name">Full Name</label>
-                <input type="text" id="name" placeholder="Enter your name" required>
-
-                <label for="email">Email Address</label>
-                <input type="email" id="email" placeholder="Enter your email" required>
-
-                <label for="message">Message</label>
-                <textarea id="message" rows="6" placeholder="Write your message here..." required></textarea>
-
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-
-            <div class="contact-info">
-                <p><strong>Email:</strong> yourname@email.com</p>
-                <p><strong>Website:</strong> My Personal Portfolio</p>
+        <div class="info-item">
+            <span class="info-symbol">✧</span>
+            <div>
+                <h3>My Course</h3>
+                <p>Bachelor of Science in Information Technology</p>
             </div>
         </div>
+
+        <div class="info-item">
+            <span class="info-symbol">♡</span>
+            <div>
+                <h3>My Interests</h3>
+                <p>Technology, Programming, Web Design, Dancing</p>
+            </div>
+        </div>
+
+        <div class="info-item">
+            <span class="info-symbol">◇</span>
+            <div>
+                <h3>My Motto</h3>
+                <p>Turning curiosity into code, and challenges into opportunities.</p>
+            </div>
+        </div>
+
     </section>
 
-    <footer>
-        <p>&copy; 2026 Celestyn | My Personal Portfolio</p>
-    </footer>
+    <section class="contact-form-container glass-card">
+
+        <h2>Leave a Message ✦</h2>
+        <p>Fill in the spaces below.</p>
+
+        <form class="contact-form">
+
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject"
+                       placeholder="Enter the subject" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message"
+                          placeholder="Write your message here..."
+                          required></textarea>
+            </div>
+
+            <button type="submit" class="send-button">
+                Send Message
+                <span class="magic-arrow">➜</span>
+            </button>
+
+        </form>
+
+        <a href="index.html" class="outline-button back-button">
+            Back to Home ✧
+        </a>
+
+    </section>
+
+</div>
+
+</main>
+
+<footer>
+    <p>✧ Thank you for exploring my universe ✧</p>
+    <p>© 2026 Celestyn | BSIT Student</p>
+</footer>
+
+<script>
+document.addEventListener("mousemove", function(e) {
+    const symbols = ["♡", "◇", "✦", "✧", "⋆", "✺", "✨"];
+
+    const trail = document.createElement("span");
+    trail.className = "magic-trail";
+
+    trail.innerHTML = symbols[Math.floor(Math.random() * symbols.length)];
+
+    trail.style.left = e.clientX + "px";
+    trail.style.top = e.clientY + "px";
+
+    document.body.appendChild(trail);
+
+    setTimeout(() => {
+        trail.remove();
+    }, 1000);
+});
+</script>
+</body>
+</html>
+
 
 </body>
 </html>

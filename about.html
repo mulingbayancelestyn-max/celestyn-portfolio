@@ -1,127 +1,179 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | My Portfolio</title>
+    <title>About Me | Celestyn</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <nav>
-            <h2 class="logo">Celestyn.</h2>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">✦ Celestyn</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <section class="page-section">
-        <h1 class="section-title">About Me</h1>
+<main>
 
-        <div class="about-box">
-            <p>
-                Hi! I am Celestyn, a first-year Bachelor of Science
-                in Information Technology student. I am interested in
-                computers, technology, and programming.
-                I enjoy learning new skills and exploring things
-                that can help me grow as a student.
-            </p>
+<section class="page-header">
+    <p class="intro-label">✧ THE PERSON BEHIND THE SCREEN ✧</p>
+    <h1>Get to <span class="gradient-text">Know Me</span></h1>
+    <p>Every little detail is a piece of my story.</p>
+</section>
 
-            <h2>Education</h2>
-            <div class="card">
-                <h3>Bachelor of Science in Information Technology</h3>
-                <p>College Student | 2026 - Present</p>
+<div class="about-content">
+
+    <section class="glass-card">
+        <h2>✦ My Background</h2>
+        <p>
+            I am a college student pursuing Bachelor of Science
+            in Information Technology. I am interested in computers,
+            technology, and improving my skills while discovering
+            new things along the way.
+        </p>
+    </section>
+
+    <section class="glass-card">
+        <h2>✦ My Education</h2>
+
+        <p><strong>Course:</strong> BS Information Technology</p>
+        <p><strong>Level:</strong> First-Year College</p>
+        <p><strong>Academic Journey:</strong> 2026 – Present</p>
+
+        <p>
+            Learning the foundations of computing, programming,
+            networking, and web development.
+        </p>
+    </section>
+
+    <section class="glass-card">
+        <h2>✦ My IT Skills</h2>
+        <p>The skills I am learning and developing through my studies.</p>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <span>⌨</span>
+                <h3>HTML</h3>
+                <p>Creating the structure of web pages.</p>
             </div>
 
-            <h2>My Skills</h2>
-            <div class="skills">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>C Programming</span>
-                <span>Computer Skills</span>
-                <span>Problem Solving</span>
+            <div class="skill-card">
+                <span>✧</span>
+                <h3>CSS</h3>
+                <p>Designing and styling websites.</p>
             </div>
 
-            <h2>My Interests</h2>
-            <p>
-                I enjoy exploring computers, learning programming,
-                dancing, and discovering new things.
-            </p>
+            <div class="skill-card">
+                <span>⌘</span>
+                <h3>C Programming</h3>
+                <p>Learning programming logic and coding.</p>
+            </div>
+
+            <div class="skill-card">
+                <span>◇</span>
+                <h3>Flowcharting</h3>
+                <p>Visualizing program processes.</p>
+            </div>
+
+            <div class="skill-card">
+                <span>✦</span>
+                <h3>Problem Solving</h3>
+                <p>Understanding and solving programming problems.</p>
+            </div>
+
+            <div class="skill-card">
+                <span>♡</span>
+                <h3>Networking</h3>
+                <p>Learning computer network fundamentals.</p>
+            </div>
+
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2026 Celestyn | My Personal Portfolio</p>
-    </footer>
+    <section class="glass-card">
+        <h2>✦ My Learning Experience</h2>
 
+        <p>
+            I have practiced programming using C, creating simple
+            programs and solving coding exercises. I have also started
+            learning HTML and CSS to build websites and understand
+            more about computers and how systems work.
+        </p>
+    </section>
+
+    <section class="glass-card">
+        <h2>✦ My Hobbies</h2>
+
+        <div class="hobby-list">
+            <p>♡ Dancing and expressing myself through movement</p>
+            <p>♡ Exploring computers and technology</p>
+            <p>♡ Learning new things</p>
+            <p>♡ Watching K-dramas</p>
+            <p>♡ Exploring nature</p>
+        </div>
+    </section>
+
+    <section class="glass-card">
+        <h2>✦ My Future Goals</h2>
+
+        <p>
+            My goal is to become more confident in programming,
+            develop my web development skills, explore different
+            areas of Information Technology, and create projects
+            that reflect my creativity and knowledge.
+        </p>
+    </section>
+
+</div>
+
+<section class="home-cta">
+    <h2>Explore the Things I Create</h2>
+    <p>Here are some of my activities and learning projects.</p>
+
+    <a href="portfolio.html" class="magic-button">
+        Explore My Projects
+        <span class="magic-arrow">➜</span>
+    </a>
+</section>
+
+</main>
+
+<footer>
+    <p>✧ Thank you for getting to know me ✧</p>
+    <p>© 2026 Celestyn | BSIT Student</p>
+</footer>
+
+<script>
+document.addEventListener("mousemove", function(e) {
+    const symbols = ["♡", "◇", "✦", "✧", "⋆", "✺", "✨"];
+
+    const trail = document.createElement("span");
+    trail.className = "magic-trail";
+
+    trail.innerHTML = symbols[Math.floor(Math.random() * symbols.length)];
+
+    trail.style.left = e.clientX + "px";
+    trail.style.top = e.clientY + "px";
+
+    document.body.appendChild(trail);
+
+    setTimeout(() => {
+        trail.remove();
+    }, 1000);
+});
+</script>
 </body>
 </html>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <header>
-        <nav>
-            <h2 class="logo">Celestyn.</h2>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="page-section">
-        <h1 class="section-title">About Me</h1>
-
-        <div class="about-box">
-            <p>
-                Hi! I am Celestyn, a first-year Bachelor of Science
-                in Information Technology student. I am interested in
-                computers, technology, and programming.
-                I enjoy learning new skills and exploring things
-                that can help me grow as a student.
-            </p>
-
-            <h2>Education</h2>
-            <div class="card">
-                <h3>Bachelor of Science in Information Technology</h3>
-                <p>College Student | 2026 - Present</p>
-            </div>
-
-            <h2>My Skills</h2>
-            <div class="skills">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>C Programming</span>
-                <span>Computer Skills</span>
-                <span>Problem Solving</span>
-            </div>
-
-            <h2>My Interests</h2>
-            <p>
-                I enjoy exploring computers, learning programming,
-                dancing, and discovering new things.
-            </p>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Celestyn | My Personal Portfolio</p>
-    </footer>
 
 </body>
 </html>
